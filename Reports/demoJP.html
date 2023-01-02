@@ -1,0 +1,1482 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jan 2, 2023 01:16:34 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@javaServiceTest</a><a class="dropdown-item" href="#">@sanity</a><a class="dropdown-item" href="#">@apiEndPoint</a><a class="dropdown-item" href="#">@wireMockTest</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">user comments</p>
+            <p class="text-sm">
+              <span>13:16:36</span> / <span>00:00:06:568</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">user comments</h5>
+<span class='badge badge-success'>01.02.2023 13:16:36</span>
+<span class='badge badge-danger'>01.02.2023 13:16:42</span>
+<span class='badge badge-default'>00:00:06:568</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify GetComments service</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.an_api_service_user()">
+                <span>Given an api service user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.user_access_getcomments_service()">
+                <span>When user access GetComments service</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.user_sees_comments()">
+                <span>Then user sees comments</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Verify that get comments end point gives 200 OK response</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.an_media_api_user()">
+                <span>Given an media api user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.user_access_getcomments_end_point()">
+                <span>When user access GetComments end point</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.user_sees_200_OK_reponse_for_get_comments()">
+                <span>Then user sees 200 OK response for Get Comments</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>Verify that get comments end point gives 404 not found response for using wrong resource</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.an_media_api_user()">
+                <span>Given an media api user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.user_access_getcomments_endpoint_with_wrong_resource()">
+                <span>When user access GetComments end point with wrong resource</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.user_sees_404_not_found_response_for_get_comments()">
+                <span>Then user sees 404 not found response for Get Comments</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>Verify that get comments end point request gets comments</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.an_media_api_user()">
+                <span>Given an media api user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.user_access_getcomments_end_point()">
+                <span>When user access GetComments end point</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.user_sees_comments_in_response()">
+                <span>Then user sees 500 comments in response</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="26"><span class="badge log pass-bg mr-2">Pass</span>Verify that get comments end point request gets unique comments</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.an_media_api_user()">
+                <span>Given an media api user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.user_access_getcomments_end_point()">
+                <span>When user access GetComments end point</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.user_sees_all_comments_has_unique_id()">
+                <span>Then user sees all comments has unique id</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="32"><span class="badge log pass-bg mr-2">Pass</span>Verify that get comments end point request gets expected number of comments for mentioned post id</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="33"><span class="badge log pass-bg mr-2">Pass</span>Verify that get comments end point request gets expected number of comments for mentioned post id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given an media api user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user access GetComments end point for post id 1</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user sees 5 comments</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="39"><span class="badge log pass-bg mr-2">Pass</span>Verify that get comments end point request gets expected number of comments for mentioned post id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given an media api user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user access GetComments end point for post id 2</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user sees 5 comments</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>Verify that get comments end point request gets expected number of comments for mentioned post id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given an media api user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user access GetComments end point for post id 3</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user sees 5 comments</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="51"><span class="badge log fail-bg mr-2">Fail</span>Verify comments endpoint mock request gets mock response</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.an_wiremock_stub_mapping_is_configure_for_comments_endpoint()">
+                <span>Given an wiremock stub mapping is configure for comments endpoint</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.user_access_wiremock_server_with_mapping_for_comments_endpoint()">
+                <span>When user access wiremock server with mapping for comments endpoint</span>
+      <div>
+        <textarea disabled class="code-block">javax.net.ssl.SSLException: Unsupported or unrecognized SSL message
+	at java.base/sun.security.ssl.SSLSocketInputRecord.handleUnknownRecord(SSLSocketInputRecord.java:451)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:175)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1382)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1295)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:416)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:388)
+	at org.apache.http.conn.ssl.SSLSocketFactory.createLayeredSocket(SSLSocketFactory.java:570)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:554)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:415)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2146)
+	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
+	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:451)
+	at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1544)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1293)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1749)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1755)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at com.example.demoJP.stepDefinitions.CommentsSteps.user_access_wiremock_server_with_mapping_for_comments_endpoint(CommentsSteps.java:91)
+	at ✽.user access wiremock server with mapping for comments endpoint(classpath:features/comments.feature:50)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.user_gets_200_ok_mock_response()">
+                <span>Then user gets 200 ok mock response</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="57"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">user posts</p>
+            <p class="text-sm">
+              <span>13:16:42</span> / <span>00:00:01:562</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">user posts</h5>
+<span class='badge badge-success'>01.02.2023 13:16:42</span>
+<span class='badge badge-danger'>01.02.2023 13:16:44</span>
+<span class='badge badge-default'>00:00:01:562</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=57</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="58"><span class="badge log pass-bg mr-2">Pass</span>Verify GetPosts service</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.an_api_service_user()">
+                <span>Given an api service user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.PostsSteps.user_access_getposts_service()">
+                <span>When user access GetPosts service</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.PostsSteps.user_sees_posts()">
+                <span>Then user sees posts</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="64"><span class="badge log pass-bg mr-2">Pass</span>Verify that get posts end point gives 200 OK response</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.an_media_api_user()">
+                <span>Given an media api user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.PostsSteps.user_access_getposts_end_point()">
+                <span>When user access GetPosts end point</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.PostsSteps.user_sees_200_OK_reponse_for_get_posts()">
+                <span>Then user sees 200 OK response for GetPosts</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="70"><span class="badge log pass-bg mr-2">Pass</span>Verify that get posts end point request gets posts</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.an_media_api_user()">
+                <span>Given an media api user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.PostsSteps.user_access_getposts_end_point()">
+                <span>When user access GetPosts end point</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.PostsSteps.user_sees_posts_in_response()">
+                <span>Then user sees 100 posts in response</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="76"><span class="badge log pass-bg mr-2">Pass</span>Verify that get posts end point request gets unique posts</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.an_media_api_user()">
+                <span>Given an media api user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.PostsSteps.user_access_getposts_end_point()">
+                <span>When user access GetPosts end point</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.PostsSteps.user_sees_all_posts_has_unique_id()">
+                <span>Then user sees all posts has unique id</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="82"><span class="badge log pass-bg mr-2">Pass</span>Verify that get posts end point request gets expected number of posts for mentioned user id</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="83"><span class="badge log pass-bg mr-2">Pass</span>Verify that get posts end point request gets expected number of posts for mentioned user id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given an media api user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user access GetPosts end point for user id 1</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user sees 10 posts</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="89"><span class="badge log pass-bg mr-2">Pass</span>Verify that get posts end point request gets expected number of posts for mentioned user id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given an media api user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user access GetPosts end point for user id 2</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user sees 10 posts</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="95"><span class="badge log pass-bg mr-2">Pass</span>Verify that get posts end point request gets expected number of posts for mentioned user id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given an media api user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user access GetPosts end point for user id 3</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user sees 10 posts</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="101"><span class="badge log pass-bg mr-2">Pass</span>Verify that get posts end point gives 404 not found response for using wrong resource</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.an_media_api_user()">
+                <span>Given an media api user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.PostsSteps.user_access_getposts_endpoint_with_wrong_resource()">
+                <span>When user access GetPosts end point with wrong resource</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.PostsSteps.user_sees_404_not_found_response_for_getposts()">
+                <span>Then user sees 404 not found response for GetPosts</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="107"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">user details</p>
+            <p class="text-sm">
+              <span>13:16:44</span> / <span>00:00:00:862</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">user details</h5>
+<span class='badge badge-success'>01.02.2023 13:16:44</span>
+<span class='badge badge-danger'>01.02.2023 13:16:45</span>
+<span class='badge badge-default'>00:00:00:862</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=107</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="108"><span class="badge log pass-bg mr-2">Pass</span>Verify GetUsers service</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.an_api_service_user()">
+                <span>Given an api service user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.UsersSteps.user_access_getusers_service()">
+                <span>When user access GetUsers service</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.UsersSteps.user_sees_users_detail()">
+                <span>Then user sees users detail</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="114"><span class="badge log pass-bg mr-2">Pass</span>Verify that get users end point gives 200 OK response</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.an_media_api_user()">
+                <span>Given an media api user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.UsersSteps.user_access_get_users_end_point()">
+                <span>When user access GetUsers end point</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.UsersSteps.user_sees_200_OK_reponse_for_get_users()">
+                <span>Then user sees 200 OK response for GetUsers</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="120"><span class="badge log pass-bg mr-2">Pass</span>Verify that get users end point gives 404 not found response for using wrong resource</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.an_media_api_user()">
+                <span>Given an media api user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.UsersSteps.user_access_getusers_endpoint_with_wrong_resource()">
+                <span>When user access GetUsers end point with wrong resource</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.UsersSteps.user_sees_404_not_found_response_for_getusers()">
+                <span>Then user sees 404 not found response for GetUsers</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="126"><span class="badge log pass-bg mr-2">Pass</span>Verify that get users end point request gets users</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.an_media_api_user()">
+                <span>Given an media api user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.UsersSteps.user_access_get_users_end_point()">
+                <span>When user access GetUsers end point</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.UsersSteps.user_sees_users_in_response()">
+                <span>Then user sees 10 users in response</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="132"><span class="badge log pass-bg mr-2">Pass</span>Verify that get users end point request gets unique users</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.CommentsSteps.an_media_api_user()">
+                <span>Given an media api user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.UsersSteps.user_access_get_users_end_point()">
+                <span>When user access GetUsers end point</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.example.demoJP.stepDefinitions.UsersSteps.user_sees_all_users_has_unique_id()">
+                <span>Then user sees all users has unique id</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">javax.net.ssl.SSLException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>javax.net.ssl.SSLException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:16:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='54'>When user access wiremock server with mapping for comments endpoint</a>
+<div class="">
+<span class="badge badge-default">user comments.Verify comments endpoint mock request gets mock response.When user access wiremock server with mapping for comments endpoint</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@javaServiceTest</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@javaServiceTest</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Verify GetComments service</a>
+<div class="">
+<span class="badge badge-default">user comments.Verify GetComments service</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='57' id='58'>Verify GetPosts service</a>
+<div class="">
+<span class="badge badge-default">user posts.Verify GetPosts service</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='108'>Verify GetUsers service</a>
+<div class="">
+<span class="badge badge-default">user details.Verify GetUsers service</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@sanity</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@sanity</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Verify that get comments end point gives 200 OK response</a>
+<div class="">
+<span class="badge badge-default">user comments.Verify that get comments end point gives 200 OK response</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='57' id='64'>Verify that get posts end point gives 200 OK response</a>
+<div class="">
+<span class="badge badge-default">user posts.Verify that get posts end point gives 200 OK response</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='114'>Verify that get users end point gives 200 OK response</a>
+<div class="">
+<span class="badge badge-default">user details.Verify that get users end point gives 200 OK response</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>20</span>
+</span>
+<p class="name">@apiEndPoint</p>
+<p class="duration text-sm">20 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@apiEndPoint</h4>
+<span status="pass" class='badge log pass-bg'>20 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Verify that get comments end point gives 200 OK response</a>
+<div class="">
+<span class="badge badge-default">user comments.Verify that get comments end point gives 200 OK response</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>Verify that get comments end point gives 404 not found response for using wrong resource</a>
+<div class="">
+<span class="badge badge-default">user comments.Verify that get comments end point gives 404 not found response for using wrong resource</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>Verify that get comments end point request gets comments</a>
+<div class="">
+<span class="badge badge-default">user comments.Verify that get comments end point request gets comments</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='26'>Verify that get comments end point request gets unique comments</a>
+<div class="">
+<span class="badge badge-default">user comments.Verify that get comments end point request gets unique comments</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>Verify that get comments end point request gets expected number of comments for mentioned post id</a>
+<div class="">
+<span class="badge badge-default">user comments.Verify that get comments end point request gets expected number of comments for mentioned post id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='33'>Verify that get comments end point request gets expected number of comments for mentioned post id</a>
+<div class="">
+<span class="badge badge-default">user comments.Verify that get comments end point request gets expected number of comments for mentioned post id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>Verify that get comments end point request gets expected number of comments for mentioned post id</a>
+<div class="">
+<span class="badge badge-default">user comments.Verify that get comments end point request gets expected number of comments for mentioned post id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='45'>Verify that get comments end point request gets expected number of comments for mentioned post id</a>
+<div class="">
+<span class="badge badge-default">user comments.Verify that get comments end point request gets expected number of comments for mentioned post id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='57' id='64'>Verify that get posts end point gives 200 OK response</a>
+<div class="">
+<span class="badge badge-default">user posts.Verify that get posts end point gives 200 OK response</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='57' id='70'>Verify that get posts end point request gets posts</a>
+<div class="">
+<span class="badge badge-default">user posts.Verify that get posts end point request gets posts</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='57' id='76'>Verify that get posts end point request gets unique posts</a>
+<div class="">
+<span class="badge badge-default">user posts.Verify that get posts end point request gets unique posts</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='57' id='82'>Verify that get posts end point request gets expected number of posts for mentioned user id</a>
+<div class="">
+<span class="badge badge-default">user posts.Verify that get posts end point request gets expected number of posts for mentioned user id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='57' id='83'>Verify that get posts end point request gets expected number of posts for mentioned user id</a>
+<div class="">
+<span class="badge badge-default">user posts.Verify that get posts end point request gets expected number of posts for mentioned user id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='57' id='89'>Verify that get posts end point request gets expected number of posts for mentioned user id</a>
+<div class="">
+<span class="badge badge-default">user posts.Verify that get posts end point request gets expected number of posts for mentioned user id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='57' id='95'>Verify that get posts end point request gets expected number of posts for mentioned user id</a>
+<div class="">
+<span class="badge badge-default">user posts.Verify that get posts end point request gets expected number of posts for mentioned user id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='57' id='101'>Verify that get posts end point gives 404 not found response for using wrong resource</a>
+<div class="">
+<span class="badge badge-default">user posts.Verify that get posts end point gives 404 not found response for using wrong resource</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='114'>Verify that get users end point gives 200 OK response</a>
+<div class="">
+<span class="badge badge-default">user details.Verify that get users end point gives 200 OK response</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='120'>Verify that get users end point gives 404 not found response for using wrong resource</a>
+<div class="">
+<span class="badge badge-default">user details.Verify that get users end point gives 404 not found response for using wrong resource</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='126'>Verify that get users end point request gets users</a>
+<div class="">
+<span class="badge badge-default">user details.Verify that get users end point request gets users</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:16:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='107' id='132'>Verify that get users end point request gets unique users</a>
+<div class="">
+<span class="badge badge-default">user details.Verify that get users end point request gets unique users</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@wireMockTest</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@wireMockTest</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:16:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='51'>Verify comments endpoint mock request gets mock response</a>
+<div class="">
+<span class="badge badge-default">user comments.Verify comments endpoint mock request gets mock response</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jan 2, 2023 01:16:34 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jan 2, 2023 01:16:45 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>2</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='66%'>
+<b>2</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='33%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='95%'><b>21</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='4%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='96%'><b>64</b> steps passed</small></div>
+<div>
+<small data-tooltip='1%'><b>1</b> steps failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"user comments":6.568,"user posts":1.562,"user details":0.862
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@javaServiceTest</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@sanity</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@apiEndPoint</td>
+<td>20</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@wireMockTest</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 2,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 21,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 64,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 1,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
