@@ -17,8 +17,11 @@ json report: /demoJP/target/cucumber-report.json (this file can be used in jenki
 <ins>Test Details:</ins>
 
 @javaServiceTest: This tagged tests are written just to demonstrate if end points are used in any rest service.
+
 @sanity: This tagged tests are written to ensure all end points resources are working
+
 @apiEndPoint: This tagged tests are written for test coverage of given endpoints(since i was not provided with swagger definition, i have assumed to requirements, they may not be actual requirements)
+
 @wireMockTest: This tagged tests are written to demonstrate wiremock implemenation in case we are using any third party or upstream or downstream apis(to mock).
 
 
