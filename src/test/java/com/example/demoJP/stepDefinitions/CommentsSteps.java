@@ -4,7 +4,6 @@ import com.example.demoJP.model.comments.Comment;
 import com.example.demoJP.service.GetCommentsService;
 import com.github.tomakehurst.wiremock.client.ResponseDefinitionBuilder;
 import com.github.tomakehurst.wiremock.client.WireMock;
-import com.github.tomakehurst.wiremock.junit5.WireMockTest;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -12,6 +11,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
@@ -19,11 +19,11 @@ import static io.restassured.RestAssured.given;
 
 
 public class CommentsSteps {
-    Response getCommentResponse, getCommentsPerPostResponse;
-    Response mockResponse;
-    Comment[] comments;
-    Comment[] commentsPerPost;
-    RequestSpecification getCommentPerPostRequest;
+    Response getCommentResponse, getCommentsPerPostResponse,postCommentResponse,mockResponse;
+    Comment[] comments,commentsPerPost;
+    RequestSpecification getCommentPerPostRequest,postCommentRequestSpec;
+    File commentCreationJsonPayloadFile = new File("./src/test/resources/testData/comment.json");
+
 
 
     private GetCommentsService getCommentsService = new GetCommentsService();
@@ -37,6 +37,7 @@ public class CommentsSteps {
     public void user_access_getcomments_service(){
 
         comments = getCommentsService.getComments();
+
     }
 
     @Then("user sees comments")
@@ -79,15 +80,18 @@ public class CommentsSteps {
 
     @Given("an wiremock stub mapping is configure for comments endpoint")
     public void an_wiremock_stub_mapping_is_configure_for_comments_endpoint(){
-        String url = "https://jsonplaceholder.typicode.com/mockResource";
+//        String url = "https://jsonplaceholder.typicode.com/mockResource";
+//        String url = "http://localhost:8080/mockResource";
+        String url = "/mockResource";
         ResponseDefinitionBuilder mockResponsebuild = new ResponseDefinitionBuilder();
         mockResponsebuild.withStatus(200);
         WireMock.givenThat(WireMock.get(url).willReturn(mockResponsebuild));
+
     }
 
     @When("user access wiremock server with mapping for comments endpoint")
     public void user_access_wiremock_server_with_mapping_for_comments_endpoint(){
-        String url = "https://localhost:8080/mockResource";
+        String url = "http://localhost:8080/mockResource";
         mockResponse = given().get(url);
 
     }
@@ -121,6 +125,20 @@ public class CommentsSteps {
     public void user_sees_number_of_comments(int numberOfComments){
         commentsPerPost = getCommentsPerPostResponse.as(Comment[].class);
         Assert.assertEquals(numberOfComments, commentsPerPost.length);
+    }
+
+    @When("user access PostComment end point with valid payload")
+    public void user_access_post_comment_endpoint_with_valid_payload(){
+        postCommentRequestSpec = given().body(commentCreationJsonPayloadFile)
+                .contentType("ContentType.JSON");
+        postCommentResponse = postCommentRequestSpec.post("https://jsonplaceholder.typicode.com/comments");
+
+    }
+
+    @Then("user sees 201 created comment response")
+    public void user_sees_201_created_comment_response(){
+
+        Assert.assertEquals(201,postCommentResponse.statusCode());
     }
 
 }

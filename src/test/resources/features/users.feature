@@ -34,5 +34,5 @@ Feature: user details
   Scenario: Verify that api user is able to create user with 201 Created response
     Given an media api user
     When user access PostUser end point with valid payload
-    Then user sees 201 created response
+    Then user sees 201 created user response
 

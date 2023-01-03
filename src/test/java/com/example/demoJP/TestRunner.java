@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "classpath:features",
         glue = "com.example.demoJP",
-//        tags    = "@apiEndPoint ",
+//        tags    = "@wireMockTest",
         plugin = {"pretty", "html:target/cucumber-htmlreport.html","json:target/cucumber-report.json","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
 public class TestRunner {

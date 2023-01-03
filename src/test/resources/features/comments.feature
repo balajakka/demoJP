@@ -42,6 +42,11 @@ Feature: user comments
     |2      |5               |
     |3      |5               |
 
+  @apiEndPoint
+  Scenario: Verify that api user is able to create comment with 201 Created response
+    Given an media api user
+    When user access PostComment end point with valid payload
+    Then user sees 201 created comment response
 
 
   @wireMockTest

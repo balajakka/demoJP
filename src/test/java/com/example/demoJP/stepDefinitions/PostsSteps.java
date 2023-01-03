@@ -11,15 +11,17 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
 import static io.restassured.RestAssured.given;
 
 public class PostsSteps {
-    Response getPostResponse,getPostsPerUserResponse;
+    Response getPostResponse,getPostsPerUserResponse,postPostResponse;
     Post[] posts, postsPerUser;
-    RequestSpecification getPostsPerUserRequest;
+    RequestSpecification getPostsPerUserRequest,postPostRequestSpec;
+    File postCreationJsonPayloadFile = new File("./src/test/resources/testData/post.json");
 
 
     private GetPostsService getPostsService = new GetPostsService();
@@ -84,5 +86,19 @@ public class PostsSteps {
     public void user_sees_number_of_posts_per_userId(int numberOfPosts){
         postsPerUser = getPostsPerUserResponse.as(Post[].class);
         Assert.assertEquals(numberOfPosts, postsPerUser.length);
+    }
+
+    @When("user access PostPost end point with valid payload")
+    public void user_access_post_Post_endpoint_with_valid_payload(){
+        postPostRequestSpec = given().body(postCreationJsonPayloadFile)
+                .contentType("ContentType.JSON");
+        postPostResponse = postPostRequestSpec.post("https://jsonplaceholder.typicode.com/posts");
+
+    }
+
+    @Then("user sees 201 created post response")
+    public void user_sees_201_created_post_response(){
+
+        Assert.assertEquals(201,postPostResponse.statusCode());
     }
 }

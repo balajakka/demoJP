@@ -22,7 +22,7 @@ public class UsersSteps {
     Response getUserResponse,postUserResponse;
     User[] users;
     RequestSpecification getCommentRequest,postUserRequestSpec;
-    File userCreationJsonPayloadFile = new File("/Users/balajakka/Downloads/demoJP/src/test/resources/testData/user.json");
+    File userCreationJsonPayloadFile = new File("./src/test/resources/testData/user.json");
 
 
     private GetUsersService getUsersService = new GetUsersService();
@@ -72,15 +72,16 @@ public class UsersSteps {
     }
 
     @When("user access PostUser end point with valid payload")
-    public void user_access_postuser_endpoint_with_valid_payload(){
+    public void user_access_post_user_endpoint_with_valid_payload(){
         postUserRequestSpec = given().body(userCreationJsonPayloadFile)
                                   .contentType("ContentType.JSON");
         postUserResponse = postUserRequestSpec.post("https://jsonplaceholder.typicode.com/users");
 
     }
 
-    @Then("user sees 201 created response")
-    public void user_sees_201_created_response(){
+    @Then("user sees 201 created user response")
+    public void user_sees_201_created_user_response(){
+
         Assert.assertEquals(201,postUserResponse.statusCode());
     }
 }

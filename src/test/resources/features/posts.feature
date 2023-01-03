@@ -42,3 +42,9 @@ Feature: user posts
     When user access GetPosts end point with wrong resource
     Then user sees 404 not found response for GetPosts
 
+  @apiEndPoint
+  Scenario: Verify that api user is able to create post with 201 Created response
+    Given an media api user
+    When user access PostPost end point with valid payload
+    Then user sees 201 created post response
+
