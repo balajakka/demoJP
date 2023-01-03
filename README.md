@@ -11,7 +11,9 @@ goto TestRunner(see path) and click Run: /demoJP/src/test/java/com/example/demoJ
 <ins>To access reports of test execution please see below paths:</ins>
 
 extent report: /demoJP/Reports/demoJP.html
+
 html report: /demoJP/target/cucumber-htmlreport.html
+
 json report: /demoJP/target/cucumber-report.json (this file can be used in jenkins build to display cucumber json report using plugin)
 
 <ins>Test Details:</ins>
